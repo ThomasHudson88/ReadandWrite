@@ -5,9 +5,10 @@ def main():
     infile = open('clients.txt','r')
 
     #Iterate through the list
-    cnum = 1
+    cnum = 0
     for line in infile:
-        print(cnum, line.rstrip('\n'))
         cnum += 1
+        print(cnum, line.rstrip('\n'))
 
+    print(f"Total Nuber of Clients: {cnum}")
 main()
